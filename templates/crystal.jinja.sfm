@@ -1,0 +1,28 @@
+name "Crystal Assemblers"
+
+EVERY 20 TICKS DO
+    INPUT FROM source
+    {% for pattern in patterns %}
+    if source has gt {{ machineCount * 16 - 1 }} {{ pattern.inputs.0 }} then
+        OUTPUT
+        {% for input in pattern.inputs -%}
+        16 {{ input }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+        TO each assembler
+    end
+    {% endfor %}
+
+    forget
+    input from assembler
+    output
+        {% for pattern in patterns -%}
+        {{ pattern.output }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    to sink
+    
+    forget
+    
+    INPUT forge_energy:: FROM energy
+    output to assembler east side
+
+END

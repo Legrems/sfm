@@ -1,0 +1,60 @@
+{
+  "patterns": [
+    {
+      "output": "engineering_processor",
+      "inputs": [
+        "printed_engineering_processor",
+        "redstone",
+        "printed_silicon"
+      ]
+    },
+    {
+      "output": "calculation_processor",
+      "inputs": [
+        "printed_calculation_processor",
+        "redstone",
+        "printed_silicon"
+      ]
+    },
+    {
+      "output": "logic_processor",
+      "inputs": [
+        "printed_logic_processor",
+        "redstone",
+        "printed_silicon"
+      ]
+    },
+    {
+      "output": "energy_processor",
+      "inputs": [
+        "printed_energy_processor",
+        "redstone",
+        "printed_silicon"
+      ]
+    },
+    {
+      "output": "concurrent_processor",
+      "inputs": [
+        "concurrent_processor_print",
+        "redstone",
+        "printed_silicon"
+      ]
+    },
+    {
+      "output": "quantum_processor",
+      "inputs": [
+        "printed_quantum_processor",
+        "redstone",
+        "printed_silicon"
+      ]
+    },
+    {
+      "output": "accumulation_processor",
+      "inputs": [
+        "printed_accumulation_processor",
+        "fluix_dust",
+        "printed_silicon"
+      ]
+    }
+  ]
+}
